@@ -16,7 +16,6 @@ def get_retriever():
         index_name=AZURE_SEARCH_INDEX,
         embedding_function=embeddings.embed_query,
         
-        vector_field_name="my_vector"  
     )
 
     return vector_store.as_retriever(
